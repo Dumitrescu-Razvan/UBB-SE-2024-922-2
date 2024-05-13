@@ -30,4 +30,12 @@
     <_ContentIncludedByDefault Remove="Views\Skills\Index.cshtml" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers-District3\" />
+    <Folder Include="DataBaseContext-District3\" />
+    <Folder Include="domain-District3\" />
+    <Folder Include="RepoInterface-District3\" />
+    <Folder Include="Repos-District3\" />
+  </ItemGroup>
+
 </Project>
