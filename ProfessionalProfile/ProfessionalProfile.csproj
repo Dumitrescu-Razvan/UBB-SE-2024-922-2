@@ -21,4 +21,13 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\Shared\_ValidationScriptsPartial.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Skills\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Skills\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Skills\Details.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Skills\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Skills\Index.cshtml" />
+  </ItemGroup>
+
 </Project>

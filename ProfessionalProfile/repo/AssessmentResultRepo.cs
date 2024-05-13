@@ -5,11 +5,11 @@ using ProfessionalProfile.Interfaces;
 
 namespace ProfessionalProfile.repo
 {
-    public class AssesmentResultRepo : IAssesmentResultRepo
+    public class AssessmentResultRepo : IAssessmentResultRepo
     {
         private readonly IDbContextFactory<DataContext> _contextFactory;
 
-        public AssesmentResultRepo(IDbContextFactory<DataContext> contextFactory)
+        public AssessmentResultRepo(IDbContextFactory<DataContext> contextFactory)
         {
             _contextFactory = contextFactory;
         }

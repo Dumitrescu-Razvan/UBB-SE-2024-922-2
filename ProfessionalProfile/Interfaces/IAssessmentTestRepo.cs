@@ -2,7 +2,7 @@
 
 namespace ProfessionalProfile.Interfaces
 {
-    public interface IAsssmnentTestRepo
+    public interface IAssessmentTestRepo
     {
         public AssessmentTest GetById(int id);
         public ICollection<AssessmentTest> GetAll();

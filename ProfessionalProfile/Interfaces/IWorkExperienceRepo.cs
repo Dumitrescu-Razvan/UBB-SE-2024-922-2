@@ -2,7 +2,7 @@
 
 namespace ProfessionalProfile.Interfaces
 {
-    public interface IWorkExperinceRepo
+    public interface IWorkExperienceRepo
     {
         public WorkExperience GetById(int id);
         public ICollection<WorkExperience> GetAll();

@@ -2,7 +2,7 @@
 
 namespace ProfessionalProfile.Interfaces
 {
-    public interface INotificattionRepocs
+    public interface INotificationRepo
     {
         public Notification GetById(int id);
         public ICollection<Notification> GetAll();
