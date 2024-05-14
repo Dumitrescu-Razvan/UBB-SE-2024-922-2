@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace ProfessionalProfile.Domain
 {
@@ -14,6 +15,7 @@ namespace ProfessionalProfile.Domain
         public bool isRead { get; set; }
 
         // Navigation properties
-        public User User { get; set; }
+        [JsonIgnore]
+        public User? User { get; set; }
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace ProfessionalProfile.Domain
@@ -16,6 +17,7 @@ namespace ProfessionalProfile.Domain
         public DateTime graduationDate { get; set; }
         public double gPA;
         // Navigation properties
-        public virtual User User { get; set; }
+        [JsonIgnore]
+        public virtual User ?User { get; set; }
     }
 }

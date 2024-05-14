@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace ProfessionalProfile.Domain
@@ -14,7 +15,8 @@ namespace ProfessionalProfile.Domain
         public string role { get; set; }
         public string description { get; set; }
 
-       //Navigation properties
-        public User User { get; set; }
+        //Navigation properties
+        [JsonIgnore]
+        public User? User { get; set; }
     }
 }

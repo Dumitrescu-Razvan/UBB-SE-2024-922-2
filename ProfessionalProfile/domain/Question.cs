@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace ProfessionalProfile.Domain
@@ -13,6 +14,7 @@ namespace ProfessionalProfile.Domain
         public int assesmentTestId { get; set; }
 
         // Navigation properties
-        public virtual AssessmentTest AssessmentTest { get; set; }
+        [JsonIgnore]
+        public virtual AssessmentTest ?AssessmentTest { get; set; }
     }
 }
