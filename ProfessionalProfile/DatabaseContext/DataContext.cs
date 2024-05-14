@@ -9,7 +9,7 @@ namespace ProfessionalProfile.DatabaseContext
         {
         }
         public DbSet<AssessmentResult> AssessmentResult { get; set; }
-        public DbSet<BussinesCard> BussinesCard { get; set; }
+        public DbSet<BusinessCard> BusinessCard { get; set; }
         public DbSet<Certificate> Certificate { get; set; }
         public DbSet<Education> Education { get; set; }
 
@@ -90,10 +90,10 @@ namespace ProfessionalProfile.DatabaseContext
                     .WithMany()
                     .HasForeignKey(a => a.userId);
             });
-            modelBuilder.Entity<BussinesCard>(BussinesCard =>
+            modelBuilder.Entity<BusinessCard>(BussinesCard =>
             {
                 BussinesCard.HasKey(a => a.bcId);
-                modelBuilder.Entity<BussinesCard>()
+                modelBuilder.Entity<BusinessCard>()
                 .HasMany(bc => bc.keySkills)
                 .WithOne();
                 

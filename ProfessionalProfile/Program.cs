@@ -22,10 +22,21 @@ namespace ProfessionalProfile
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 
             });
-            builder.Services.AddSingleton<IUserRepoInterface, UserRepo>();
             builder.Services.AddSingleton<IAnswerRepo, AnswerRepo>();
-            builder.Services.AddSingleton<ISkillRepo, SkillRepo>();
+            builder.Services.AddSingleton<IAssessmentResultRepo, AssessmentResultRepo>();
+            builder.Services.AddSingleton<IAssessmentTestRepo, AssessmentTestRepo>();
+            builder.Services.AddSingleton<IBusinessCardRepo, BusinessCardRepo>();
             builder.Services.AddSingleton<ICertificateRepo, CertificateRepo>();
+            builder.Services.AddSingleton<IEducationRepo, EducationRepo>();
+            builder.Services.AddSingleton<IEndorsementRepo, EndorsementRepo>();
+            builder.Services.AddSingleton<INotificationRepo, NotificationRepo>();
+            builder.Services.AddSingleton<IPrivacyRepo, PrivacyRepo>();
+            builder.Services.AddSingleton<IProjectRepo, ProjectRepo>();
+            builder.Services.AddSingleton<IQuestionRepo, QuestionRepo>();
+            builder.Services.AddSingleton<ISkillRepo, SkillRepo>();
+            builder.Services.AddSingleton<IUserRepoInterface, UserRepo>();
+            builder.Services.AddSingleton<IVolunteeringRepo, VolunteeringRepo>();
+            builder.Services.AddSingleton<IWorkExperienceRepo, WorkExperienceRepo>();
 
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
